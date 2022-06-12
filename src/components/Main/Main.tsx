@@ -127,8 +127,6 @@ export function Main() {
           </button>
           <button
             onClick={() => {
-              console.log(userIdAndId);
-              console.log(pageToShow);
               removeDocument(pageToShow[0].id);
             }}
           >
@@ -152,8 +150,6 @@ export function Main() {
   }
 
   function changeDocument() {
-    console.log(titleValue);
-    console.log(userIdAndId.id);
     setListOfDocuments([]);
     setBooleanEditorChangeDocument(true);
     return <></>;
@@ -213,7 +209,6 @@ export function Main() {
 
   function saveNew() {
     if (editorRef.current) {
-      console.log(editorRef.current.getContent());
       let service = new PostsService();
       service
         .newDocument(
