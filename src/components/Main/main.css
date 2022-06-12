@@ -1,1 +1,103 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.containerCardMain {
+  min-width: 50vw;
+  min-height: 50vh;
+  background-color: rgba(255, 255, 255, 0.744);
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 20px 10px darkgray;
+          box-shadow: 0px 0px 20px 10px darkgray;
+}
+
+.containerPageShowDocument {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.editorOpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.listShowDocument {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listShowDocument .listItemHeading {
+  color: darkblue;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.listDocument {
+  margin: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.listDocument li {
+  list-style-type: none;
+}
+
+.listDocument li .containerDocument {
+  min-width: 40vw;
+  min-height: 40vh;
+  padding: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 60vw;
+  background-color: white;
+  border: 3px solid darkgray;
+  -webkit-box-shadow: 0px 0px 20px 10px darkgray;
+          box-shadow: 0px 0px 20px 10px darkgray;
+}
+
+.listDocument li .containerDocument .listItemHeading {
+  color: darkblue;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.listDocument li .showDate {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px 5px 10px;
+  background-color: white;
+  border: 3px solid darkgray;
+  -webkit-box-shadow: 0px 0px 10px 5px darkgray;
+          box-shadow: 0px 0px 10px 5px darkgray;
+}
+
+button {
+  width: 200px;
+  margin: 5px;
+  background-color: lightcoral;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 5px 2px darkgray;
+          box-shadow: 0px 0px 5px 2px darkgray;
+  padding: 5px 10px 5px 10px;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

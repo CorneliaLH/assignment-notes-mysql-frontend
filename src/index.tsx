@@ -16,10 +16,10 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path='/' element={<Layout />}>
           <Route index element={<Login />} />
-          <Route path="/main" element={<Main />} />
-          <Route path="*" element={<NotFound />}></Route>
+          <Route path='/main' element={<Main />} />
+          <Route path='*' element={<NotFound />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

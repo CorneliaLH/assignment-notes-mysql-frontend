@@ -11,6 +11,16 @@ export class UserService {
     );
     return response.data;
   }
+
+  async setCookie(userId: string) {
+    let response = await axios.post(
+      "http://localhost:3005/users/setcookie/",
+      { userId: userId },
+
+      { headers: { "Content-Type": "application/json" } }
+    );
+    return response.data;
+  }
   //   async postNewUser(newUserInfo: any) {
   //     let response = await axios.post(
   //       "https://assignmentnewsletterbackend.herokuapp.com/users/newuser",

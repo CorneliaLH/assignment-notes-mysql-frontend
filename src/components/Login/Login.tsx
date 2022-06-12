@@ -1,17 +1,15 @@
 import { ChangeEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { PostsService } from "../../services/PostsService";
 import { UserService } from "../../services/UserService";
+import "./login.css";
 
+interface ILoginValues {
+  userName: string;
+  password: string;
+}
 export function Login() {
-  //   const [openNewUserTag, setOpenNewUserTag] = useState<boolean>(false);
-  //   const [validationUserNameLength, setValidationUserNameLength] =
-  //     useState(false);
-  //   const [validationUserNameCharachters, setValidationUserNameCharachters] =
-  //     useState(false);
-  //   const [validationPasswordLength, setValidationPasswordLength] =
-  //     useState(false);
-  //   const [validationEmail, setValidationEmail] = useState(false);
-  const [logInValues, setLogInValues] = useState<any>({
+  const [logInValues, setLogInValues] = useState<ILoginValues>({
     userName: "",
     password: "",
   });
@@ -37,35 +35,39 @@ export function Login() {
   }
   return (
     <>
-      <div className="containerLogin">
-        <h2 className="headingLogin">Var vänlig logga in nedan:</h2>
-        <form className="formLogin">
-          <input
-            type="text"
-            placeholder="Användarnamn"
-            id="userLogin"
-            name="userName"
-            value={logInValues.userName}
-            onChange={handleInputChangeLogin}
-          />
-          <input
-            type="password"
-            placeholder="Lösenord "
-            id="passwordLogin"
-            name="password"
-            value={logInValues.password}
-            onChange={handleInputChangeLogin}
-          />
-          <button
-            type="submit"
-            className="submitButtonLogin"
-            onClick={(e) => {
-              e.preventDefault();
-              submitLogIn();
-            }}
-          >
-            Logga in
-          </button>
+      <div className='containerLogin'>
+        <h2 className='headingLogin'>Var vänlig logga in nedan:</h2>
+        <form className='formLogin'>
+          <div className='containerInput'>
+            <input
+              type='text'
+              placeholder='Användarnamn'
+              id='userLogin'
+              name='userName'
+              value={logInValues.userName}
+              onChange={handleInputChangeLogin}
+            />
+            <input
+              type='password'
+              placeholder='Lösenord '
+              id='passwordLogin'
+              name='password'
+              value={logInValues.password}
+              onChange={handleInputChangeLogin}
+            />
+          </div>
+          <div className='containerButton'>
+            <button
+              type='submit'
+              className='submitButtonLogin'
+              onClick={(e) => {
+                e.preventDefault();
+                submitLogIn();
+              }}
+            >
+              Logga in
+            </button>
+          </div>
         </form>
       </div>
     </>

@@ -2,7 +2,6 @@ body {
   margin: 0;
   height: fit-content;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: beige;
 }
 
 #root {
@@ -11,4 +10,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-image: url(../src/images/flower.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* filter: blur(5px); */
 }

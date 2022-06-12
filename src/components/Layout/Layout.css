@@ -1,14 +1,35 @@
+.containerPage {
+  position: relative;
+}
+
 .header {
   height: 10vh;
-  background-color: aquamarine;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.384);
+  color: white;
 }
 
 .main {
-  height: 80vh;
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer {
   height: 10vh;
-  background-color: aquamarine;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.384);
+  color: white;
 }
 /*# sourceMappingURL=Layout.css.map */

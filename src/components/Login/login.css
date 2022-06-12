@@ -1,0 +1,12 @@
+.containerLogin {
+  background-color: rgba(255, 255, 255, 0.744);
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 20px 10px darkgray;
+          box-shadow: 0px 0px 20px 10px darkgray;
+}
+
+.containerButton {
+  text-align: center;
+}
+/*# sourceMappingURL=login.css.map */

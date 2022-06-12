@@ -1,13 +1,25 @@
+.containerPage {
+  position: relative;
+}
+
 .header {
   height: 10vh;
-  background-color: aquamarine;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.384);
+  color: white;
 }
 
 .main {
-  height: 80vh;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
   height: 10vh;
-  background-color: aquamarine;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.384);
+  color: white;
 }
